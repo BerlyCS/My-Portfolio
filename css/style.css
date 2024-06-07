@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF00;
+}
+
+header {
+    background-color: #000000;
+}
+
+#projects .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.animated-icon {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.blank {
+    padding: 300px 0px;
+    background-color: beige;
+}
+
+:hover {
+
+}
+
+.animated-icon.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#social-media img {
+    transition: transform 0.3s;
+}
+
+#social-media img:hover {
+    transform: scale(1.1);
+}
