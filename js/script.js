@@ -1,12 +1,6 @@
-function showProjectDetails(title, description) {
-    document.getElementById('projectModalLabel').innerText = title;
-    document.getElementById('modalBody').innerText = description;
-    $('#projectModal').modal('show');
-}
-
-// Intersection Observer for scroll animations
+// Observador para ejecutar animaciones
 document.addEventListener('DOMContentLoaded', function() {
-    const animatedIcons = document.querySelectorAll('.animated-icon');
+    const animatedIcons = document.querySelectorAll('.animated-block');
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -14,6 +8,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 entry.target.classList.add('show');
             } else {
                 entry.target.classList.remove('show');
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    animatedIcons.forEach(icon => {
+        observer.observe(icon);
+    });
+});
+
+// Observador para ejecutar animaciones
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedIcons = document.querySelectorAll('.animated-block-persistent');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
             }
         });
     }, {

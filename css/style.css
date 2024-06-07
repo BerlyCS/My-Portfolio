@@ -1,23 +1,32 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: ;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFFFFF00;
+    background-color: #ffffff00;
 }
 
-header {
-    background-color: #000000;
+.header-block {
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    font-size: 2em;
+    text-align: center;
 }
 
-#projects .card img {
-    height: 200px;
-    object-fit: cover;
+.animated-block {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
 }
 
-.animated-icon {
+.animated-block-persistent {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease-out;
@@ -25,14 +34,16 @@ header {
 
 .blank {
     padding: 300px 0px;
-    background-color: beige;
+    background-color: black;
 }
 
-:hover {
-
+.blank2 {
+    padding: 30px 30px;
+    margin: 30%;
+    justify-content: center;
+    background-color: wheat;
 }
-
-.animated-icon.show {
+.show {
     opacity: 1;
     transform: translateY(0);
 }
@@ -43,4 +54,9 @@ header {
 
 #social-media img:hover {
     transform: scale(1.1);
+}
+
+.main-block-title {
+    justify-content: center;
+    
 }
