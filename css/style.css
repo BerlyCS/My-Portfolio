@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     font-family: "Raleway", sans-serif;
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
+    /* background-color: red; */
 }
 
 body {
@@ -28,14 +29,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #161a22;
+    background-color: #060d1a;
     color: white;
 }
 
 .abilities-block {
     padding: 10% 1%;
     margin: 0 0;
-    background-color: #161a22;
+    background-color: #050d1d;
     color: white;
     text-align: center;
     justify-content: center;
@@ -56,13 +57,13 @@ body {
 .animated-block {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.5s ease-out;
+    transition: all 0.5s ease-in;
 }
 
 .animated-block-persistent {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.5s ease-out;
+    transition: all 0.5s ease-in;
 }
 
 .blank {
