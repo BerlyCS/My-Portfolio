@@ -15,12 +15,12 @@ body {
 }
 
 .title-upper {
-    font-size: 3vh;
+    font-size: 150%;
     color: greenyellow;
 }
 
 .title-name {
-    font-size: 7vh;
+    font-size: 300%;
     font-weight: 500;
 }
 
