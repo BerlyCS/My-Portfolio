@@ -24,8 +24,20 @@ body {
     font-weight: 500;
 }
 
+.pd-5 {
+    padding: 20px;
+}
+
 .title-text {
     color: antiquewhite;
+}
+
+.block-title {
+    font-weight: 700;
+    font-size: x-large;
+    border-bottom: solid orange 5px;
+    border-radius: 3px;
+    padding: 1%;
 }
 
 .header-block {
@@ -35,6 +47,16 @@ body {
     align-items: center;
     background-color: #060d1a;
     color: white;
+}
+
+.about-block {
+    padding: 10%;
+    margin: 0;
+    background-color: #050d1d;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .abilities-block {
