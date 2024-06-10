@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: "Raleway", sans-serif;
-    /* outline: 1px red solid; */
+    /* border: 1px solid red; */
     /* background-color: red; */
 }
 
@@ -40,19 +40,27 @@ body {
     padding: 1%;
 }
 
+.block-title-l {
+    font-weight: 700;
+    color:#252935;
+    font-size: x-large;
+    border-bottom: solid orange 5px;
+    border-radius: 3px;
+    padding: 1%;
+}
 .header-block {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #060d1a;
+    background-color: #05081c;
     color: white;
 }
 
 .about-block {
     padding: 10%;
     margin: 0;
-    background-color: #050d1d;
+    background-color: #040310;
     color: white;
     text-align: center;
     justify-content: center;
@@ -70,14 +78,27 @@ body {
 }
 
 .proyects-block {
-    padding: 10% 1%;
+    padding: 10% 5%;
     margin: 0 0;
-    background-color: #161a22;
+    background-image: url(../images/tile2.webp);
+    /* background-color: #161a22; */
     color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
-     
+    background-repeat: repeat;
+    animation: bg_move 2s infinite linear;
+    overflow: hidden;
+  
+}
+
+@keyframes bg_move {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 29px;
+  }
 }
 
 .animated-block {
@@ -92,17 +113,6 @@ body {
     transition: all 0.5s ease-in;
 }
 
-.blank {
-    padding: 300px 0px;
-    background-color: black;
-}
-
-.blank2 {
-    padding: 30px 30px;
-    margin: 30%;
-    justify-content: center;
-    background-color: wheat;
-}
 .show {
     opacity: 1;
     transform: translateY(0);
@@ -122,21 +132,21 @@ body {
 }
 
 .icon-block {
-    padding: 30px; 
+    padding: 10px; 
     margin: 15px;
     width: 100px;
     height: 24vh;
     align-content: center;
     justify-content: center;
     display: flex;
-    border: 1px solid #252935; /* Añade un borde para ver claramente el cuadro */
-    border-radius: 10px; /* Si quieres esquinas redondeadas */
+    border: 1px solid #252935;
+    border-radius: 3px;
     box-shadow: 0 4px 8px rgba(0, 120, 120, 0.1);
     transition: transform 0.3s;
 }
 
 .icon-block:hover {
     transform: scale(1.1);
-} 
+}
 
 
